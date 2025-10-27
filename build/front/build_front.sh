@@ -1,6 +1,6 @@
-if [ -d "Homepage-Front-R2-secfixes" ]; then
+if [ -d "./Homepage-Front-R2-secfixes" ]; then
   echo "폴더가 이미 존재합니다. git pull을 실행합니다..."
-  (cd Homepage-Front-R2-secfixes && git pull origin develop)
+  (cd ./Homepage-Front-R2-secfixes && git pull origin develop)
 else
   echo "폴더가 없습니다. git clone을 실행합니다..."
   git clone -b develop --depth 1 "https://github.com/KEEPER31337/Homepage-Front-R2-secfixes.git" Homepage-Front-R2-secfixes
