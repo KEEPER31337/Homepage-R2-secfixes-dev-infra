@@ -9,10 +9,10 @@ FROM --platform=${BUILDPLATFORM:-linux/amd64} node:18-bullseye-slim AS builder
 ENV CI=false
 
 # 빌드 아규먼트 (런타임과 분리)
-ARG REACT_APP_API_URL=
+ARG PUBLIC_API_URL=
 
 # 환경 변수 설정 (HTTPS는 빌드와 무관 → 제거 권장)
-ENV REACT_APP_API_URL=${REACT_APP_API_URL}
+ENV PUBLIC_API_URL=${PUBLIC_API_URL}
 
 WORKDIR /app
 

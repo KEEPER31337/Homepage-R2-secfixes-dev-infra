@@ -7,4 +7,4 @@ else
 fi
 
 DOCKER_BUILDKIT=1
-docker build --platform linux/arm64/v8 -t homepage-front-r2:latest --build-arg REACT_APP_API_URL=https://api.keeper.cjaewon.com .
+docker build --platform linux/arm64/v8 -t homepage-front-r2:latest --build-arg PUBLIC_API_URL=https://api.keeper.cjaewon.com .
